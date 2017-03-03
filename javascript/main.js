@@ -14,4 +14,10 @@ $(document).ready(function(){
 
   });
 
+  $('#newSketch').click(function (){
+
+    alert('hello!');
+
+  });
+
 });
