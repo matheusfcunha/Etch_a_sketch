@@ -4,15 +4,33 @@ h2 {
 }
 #wrapper {
   margin: 100px auto;
-  width: 65%;
+  width: 800px;
   height: 500px;
   border: solid blue;
 }
 
 .divGrid {
-  width: 80px;
-  height: 55px;
+  width: 50px;
+  height: 31.25px;
   background-color: black;
+  display: inline-block;
   float: left;
 
 }
+
+/*.divGrid:hover {
+  background-color: yellow;
+}*/
+
+/* Squares with borders
+
+.divGrid {
+  width: 48px;
+  height: 29.25px;
+  border: 1px solid red;
+  background-color: black;
+  display: inline-block;
+  float: left;
+
+}
+*/
