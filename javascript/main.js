@@ -9,19 +9,19 @@ $(document).ready(function() {
 
     $('#wrapper > div').addClass("divGrid");
 
-/*----------------------COLOR CHANGE-------------------------------*/
+    /*----------------------COLOR CHANGE-------------------------------*/
 
 
-   $("#bg").change(function(){
-        $(".divGrid").css("background-color",$("#bg").val());
+    $("#bg").change(function() {
+        $(".divGrid").css("background-color", $("#bg").val());
     });
 
 
-/*----------------------------------------------------------------*/
+    /*----------------------------------------------------------------*/
 
-$('.divGrid').mouseenter(function() {
-    $(this).css("background-color",$("#color").val());
-});
+    $('.divGrid').mouseenter(function() {
+        $(this).css("background-color", $("#color").val());
+    });
 
     $('#newSketch').click(function() {
 
@@ -29,13 +29,18 @@ $('.divGrid').mouseenter(function() {
         var height = 500;
         var width = 800;
         var userNumber = prompt('How many pixels do you want? Example: 32 (32x32)');
-               if (userNumber === "" || userNumber === "0") {
-                 userNumber = "16"
-               };
-               if (isNaN(userNumber)) {
-                 userNumber = "16"
-                 alert("Only numbers please");
-               };
+        if (userNumber === "" || userNumber === "0") {
+            userNumber = "16"
+        };
+        if (isNaN(userNumber)) {
+            userNumber = "16"
+            alert("Only numbers please");
+        };
+        if (userNumber > 200) {
+            userNumber = "16"
+            alert("200 is the limit!")
+        };
+
         var userPixels = parseInt(userNumber);
 
 
@@ -55,9 +60,9 @@ $('.divGrid').mouseenter(function() {
         $('.divGrid').width(formattedWidth);
 
 
-    $('.divGrid').mouseenter(function() {
-        $(this).css("background-color",$("#color").val());
-    });
+        $('.divGrid').mouseenter(function() {
+            $(this).css("background-color", $("#color").val());
+        });
 
     });
 
