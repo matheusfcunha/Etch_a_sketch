@@ -6,7 +6,18 @@
   <link type="text/css" rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h2>Etch-a-Sketch</h2>
+  <div id="instructions">
+    <p class="info_titles">Instructions</p>
+    <p class="info">A little pixel art board</p>
+    <ul class="info">
+       <li>Hover the mouse to draw</li><br>
+       <li>Click color to change pixels colors</li><br>
+       <li>Click Background Color to change it</li><br>
+       <li>Click New Sketch button to change the amout of pixels</li><br>
+       <li>You can't draw holding mouse button, so plan your draw before you start</li>
+  </ul>
+  </div>
+  <h2>Pixel Art Sketch</h2>
   <div id="top_bar">
     <form method="post" action="">
           <label for="bg">Color:</label>
@@ -19,6 +30,7 @@
 </div>
   <div id="wrapper">
   </div>
+  <p id="about" class="info">Cruzeta Enterprise 2017. Papo Retido Respira!</p>
   <script src="javascript/jquery-3.1.1.min.js"></script>
   <script src="javascript/main.js"></script>
 </body>
